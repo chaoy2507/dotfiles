@@ -18,5 +18,5 @@ Clone this repo to `dotfile` folder.
 Create symbolic links.
 
 ```shell
-ln -sl TARGET LINK_NAME
+ln -sf TARGET LINK_NAME
 ```

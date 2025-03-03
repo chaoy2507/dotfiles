@@ -8,6 +8,7 @@ Install following softwares.
 - [tpm](https://github.com/tmux-plugins/tpm#installation)
 - [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
 - [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- [fzf](https://github.com/junegunn/fzf#installation)
 
 # Clone Repo
 

@@ -11,5 +11,9 @@ map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "window right" })
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map("i", "<C-l>", function ()
+  require("copilot.suggestion").accept()
+end, { desc = "accept copilot suggestion" })
+
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

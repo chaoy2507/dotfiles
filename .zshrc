@@ -1,6 +1,9 @@
 export PATH="$PATH:$HOME/.local/bin"
+export OPENAI_API_KEY=$(pass show openai/test)
+export LANGSMITH_API_KEY=$(pass show langsmith/test)
+export LANGSMITH_TRACING="true"
 
-# Set the directory we want to store zinit and plugins
+# Set the directory we want to store zinit and plugin
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -23,6 +26,7 @@ zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::dnf
 
 # Load completions
 autoload -Uz compinit && compinit

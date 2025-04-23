@@ -1,7 +1,4 @@
 export PATH="$PATH:$HOME/.local/bin"
-export OPENAI_API_KEY=$(pass show openai/test)
-export LANGSMITH_API_KEY=$(pass show langsmith/test)
-export LANGSMITH_TRACING="true"
 
 # Set the directory we want to store zinit and plugin
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
